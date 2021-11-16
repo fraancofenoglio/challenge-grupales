@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(./images/bg-pattern-top.svg) no-repeat, url(./images/bg-pattern-bottom.svg) no-repeat;
+    background-color: var(--Dark-cyan);
+    background-position: right 35vw bottom 50vh, left 30vw top 50vh;
+    font-family: "Kumbh Sans";
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.card-container {
+    margin: 15px;
+    width: 85%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 14px;
+    background: url(./images/bg-pattern-card.svg) top center no-repeat;
+    background-color: white;
+    align-items: center;
+
+}
+
+.main-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 16%;
+    padding-bottom: 10%;
+    border-bottom: 1px groove var(--Dark-grayish-blue);
+}
+
+.username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 45%;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 8% 0% 8% 0%;
+    text-align: center;
+}
+
+.followers, .likes, .photos {
+    padding: 0% 5% 0% 5%;
+}
+
+.user-img {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.user-img img {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 5%;
+}
+
+h1, h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.user-stats p {
+    font-size: 12px;
+}
