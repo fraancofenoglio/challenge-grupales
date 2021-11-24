@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95%;
+    margin: 3%;
+    background: url(./images/bg-mobile.svg) no-repeat;
+    background-color: var(--Violet);
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+header .main-img {
+    width: 87%;
+    margin: 5%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+main h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.header-img {
+    width: 70%;
+    margin-right: 15%;
+    margin-bottom: 30px;  
+}
+
+.header-img img {
+    margin: 12px 0px 10px 0px;
+    width: 60%;
+}
+
+main p {
+    color: #ffffff;
+    font-family: 'Open Sans';
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 95%;
+}
+
+.main-img {
+    margin: 0%;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+
+.register-container {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin: 40px 0 60px 0;
+    width: 80%;
+    box-shadow: rgba(39, 40, 43, 0.5) 0px 5px 4px;
+}
+
+.register-container a {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.register-container:hover {
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+}
+
+.social {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social i {
+    outline: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    height: 25px;
+    
+}
+
+.social i:hover {
+    color: var(--Soft-Magenta);
+    outline: 1px solid var(--Soft-Magenta);
+}
+
+a {
+    text-decoration: none;
+    color: var(--Violet);
+    
+}
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 40px;
+}
+.attribution a { 
+    color: hsl(229, 52%, 96%); 
+}
