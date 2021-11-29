@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Primary */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* Accent */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --Light-gray: hsl(0, 0%, 75%);
+  
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    font-family: "Open Sans";
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: min-width;
+    padding: 15px 10px;
+}
+
+header nav {
+    display: flex;
+}
+
+nav a {
+    padding: 15px 5px;
+    color: var(--very-dark-blue);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+}
+
+.first-image {
+    width: 90%;
+}
+
+main div {
+    text-align: center;    
+}
+
+.email-input {
+    margin-left: 2px;
+    margin-bottom: 13px;
+    width: 300px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid black;
+
+}
+
+.email-input[type="email"] {
+    padding-left: 15px;
+    text-transform: lowercase;
+}
+
+.button-main {
+    margin-bottom: 70px;
+}
+
+.main-button {
+    width: 300px;
+    height: 40px;
+    background-color: var(--bright-blue);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    font-family: "Raleway";
+    box-shadow: 3px 1px 7px var(--Light-gray);
+}
+
+.a-1 {
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.a-1 img {
+    margin-bottom: 80px;
+}
+
+.a-1 .a-1-linea {
+    border-bottom: 1px solid var(--moderate-cyan);
+    width: max-content;
+}
+
+.a-1 .a-1-linea{
+    color: var(--moderate-cyan);
+    text-decoration: none;
+}
+
+.a-1-linea img {
+    margin-bottom: 0px;
+}
+
+.a-1 h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.a-1 p {
+    color: var(--desaturated-blue);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.first-p {
+    margin-bottom: 15px;
+}
+
+.testimonio {
+    background-color: white;
+}
+
+.a-2 {
+    background-color: var(--desaturated-blue);
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.a-2-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.a-2-text h3 {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.a-2-text p {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.a-2-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.a-2-data button {
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--bright-blue);
+    width: 300px;
+    height: 40px;
+}
+
+
+footer{
+    background: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 40px;
+    color: white;
+    font-family: 'Open Sans', sans-serif ;
+}
+.img-footer{
+    color: white;
+    width: 70%;
+}
+.contact{
+    padding: 20px 0;
+}
+.contact h4{
+    margin-bottom: 20px;
+}
+
+.nav-footer{
+    margin-bottom: 40px;
+}
+.terms-footer{
+    margin-bottom: 40px;
+}
+.social{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.social i{
+    font-size: 18px;
+    outline: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.icono-1{
+    width: 38px;
+    text-align: center;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
