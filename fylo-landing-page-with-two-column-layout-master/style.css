@@ -82,7 +82,6 @@ main div {
 
 .email-input[type="email"] {
     padding-left: 15px;
-    text-transform: lowercase;
 }
 
 .button-main {
