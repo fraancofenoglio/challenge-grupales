@@ -198,54 +198,161 @@
 // }
 
 
-// 11.Solicitar al usuario que ingrese 3 núm.31// ea del 1 al 12: "));
-//Se puede usar switch? 
-// switch (key) {
-//     case value:
-        
-//         break;
-//     case value:
-        
-//         break;
-//     case value:
-        
-//         break;
-//     case value:
-        
-//         break;
-//     case value:
-        
-//         break;
-//     case v    case value:
-        
-//         break;
-// alue:
-        
-//         break;
-//     case value:
-        
-//         break;
+// 11.Solicitar al usuario que ingrese 3 núm e indicar cual es el mayor.
+// let num1 = parseFloat(prompt("Ingrese el primer número"));
+// let num2 = parseFloat(prompt("Ingrese el segundo número")  );
+// let num3 = parseFloat(prompt("Ingrese el tercer número"));
 
-//     default:
-//         break;
+// if (num1 < num2 && num2 < num3) {
+//     alert("El mayor es: " + num3);
+// } else if (num2<num1 && num3 < num1){
+//     alert("El mayor es: " + num1);
+// } else {
+//     alert("El mayor es: "+ num2);
 // }
 
+//12. Solicitar al usuario que ingrese su edad y una bebida. (Entre: Cerveza, jugo, agua). Si pide alcohol y es menor de edad que le salte un alerta indicando que no puede realizar la compra. Indicar el costo y solicitar al usuario que indique con cuanto va a pagar e indicar cuánto sería su vuelto. 
+//(Ej: La cerveza cuesta $50  y paga con 100, se le debe devolver $50. Si indica que paga con menos de lo que cuesta el producto, indicar un error).
 
+// let edad = prompt("Ingrese su edad");
+// let bebida = prompt("Ingrese la bebida que desea: (Cerveza / Jugo / Agua)");
+// let bebidaMinuscula = bebida.toLowerCase();
+// let precioCerveza = 200;
+// let precioJugo = 100;
+// let precioAgua = 80;
+// if (edad < 18 && bebidaMinuscula == "cerveza"){
+//     alert("Usted es menor de edad, no puede comprar esta bebida.")
+// } else if (bebidaMinuscula == "cerveza"){
+//     alert("La "+bebidaMinuscula + " su valor es: $"+ precioCerveza );
+// } else if (bebidaMinuscula == "jugo"){
+//     alert(bebidaMinuscula + " su valor es: $"+ precioJugo);
+// } else if (bebidaMinuscula == "agua") {
+//     alert(bebidaMinuscula + " su valor es: $" + precioAgua);
+// }
+// let pago = parseFloat(prompt("¿Con cuánto va a pagar?"));
 
+// if (pago < precioCerveza || pago < precioJugo || pago < precioAgua){
+//   alert("No te alcanza para pagar!!");
+// } else if (bebidaMinuscula == "cerveza"){
+//     alert("La "+ bebidaMinuscula + " cuesta $"+ precioCerveza + " y su vuelto es $"+ (pago-precioCerveza)); 
+// } else if (bebidaMinuscula == "jugo"){
+//     alert("La "+ bebidaMinuscula + " cuesta $"+ precioJugo + " y su vuelto es $"+ (pago-precioJugo)); 
+// } else if (bebidaMinuscula == "agua"){
+//     alert("La "+ bebidaMinuscula + " cuesta $"+ precioAgua + " y su vuelto es $"+ (pago-precioAgua)); 
+// }
+
+// Si tiene 17 años y pide cerveza hay que darle un corte al programa.
+
+//13. Solicitar al usuario un número de mes y devolver el nombre. (Ej: Ingreso 4 y me devuelve “Abril”).
+// let numeroMes = parseFloat(prompt("Ingrese un número del 1 al 12: "));
+// if  (numeroMes == 1){
+//     alert("Enero");
+// }
+// else if (numeroMes == 2 ){
+//     alert("Febrero");
+// }
+// else if (numeroMes == 3 ){
+//     alert("Marzo");
+// }
+// else if (numeroMes == 4 ){
+//     alert("Abril");
+// }
+// else if (numeroMes == 5 ){
+//     alert("Mayo");
+// }
+// else if (numeroMes == 6 ){
+//     alert("Junio");
+// }
+// else if (numeroMes == 7 ){
+//     alert("Julio");
+// }
+// else if (numeroMes == 8 ){
+//     alert("Agosto");
+// }
+// else if (numeroMes == 9 ){
+//     alert("Septiembre");
+// }
+// else if (numeroMes == 10 ){
+//     alert("Octubre");
+// }
+// else if (numeroMes == 11 ){
+//     alert("Noviembre");
+// }
+// else if (numeroMes == 12 ){
+//     alert("Diciembre");
+    
+// }
 
 //BONUS:
 
-//1.Solicitar al usuario su clave de 4 dígitos (que tendremos almacenada en una variable) y el monto a retirar. Si la clave es correcta y el monto mayor al balance, realizar la operación. Sino, mostrar un mensaje     case value:
-        
-  //      break;
-//de error en caso de ser la clave incorrecta o pedir más dinero del disponible.
+//1.Solicitar al usuario su clave de 4 dígitos (que tendremos almacenada en una variable) y el monto a retirar. Si la clave es correcta y el monto mayor al balance, realizar la operación. Sino, mostrar un mensaje de error en caso de ser la clave incorrecta o pedir más dinero del disponible.
+
+
+// alert("Su clave es 10000-1");
+// let clave = 9999;
+// let balance = 5000;
+// let intento = parseFloat(prompt("Ingrese la clave: ")); 
+// //let monto = parseFloat(prompt("Ingrese el monto a retirar"));
+
+// if (intento == clave) {
+//     let monto = parseFloat(prompt("Ingrese el monto a retirar"));
+//     if (monto < balance){
+//         alert("Operación exitosa. Su saldo restante es: $" + (balance - monto));
+//     }
+//     else {
+//         alert("Error!, Saldo insuficiente.");
+//     }
+
+// } else {
+//     alert("Error!, clave incorrecta, vuelva a intentar");
+// }
 
 
 
 //2.Solicitar al usuario su día y mes de nacimiento e indicar cual es su signo zodiacal.
 
+                                        // Aries: 21 de marzo al 19 de abril.
+                                        // Tauro: 20 de abril al 20 de mayo.
+                                        // Géminis: 21 de mayo al 20 de junio.
+                                        // Cáncer: 21 de junio al 22 de julio.
+                                        // Leo: 23 de julio al 22 de agosto.
+                                        // Virgo: 23 de agosto al 22 de septiembre.
+                                        // Libra: 23 de septiembre al 22 de octubre.
+                                        // Escorpio: 23 de octubre al 21 de noviembre.
+                                        // Sagitario: 22 de noviembre al 21 de diciembre.
+                                        // Capricornio: 22 de diciembre al 19 de enero.
+                                        // Acuario: 20 de enero al 18 de febrero.
+                                        // Piscis: 19 de febrero al 20 de marzo
 
 
+    // let dia = parseFloat(prompt("Ingrese su día de cumpleaños: "));
+    // let mes = parseFloat(prompt("Ingrese su mes (del 1 al 12) de cumpleaños: "));
+
+    // if ((dia >= 21 && mes==3) || (dia <= 19 && mes== 4) ){
+    //     alert("Sos de Aries");
+    // } else if ((dia >= 20 && mes==4) || (dia<=20 && mes==5)) {
+    //     alert("Sos de Tauro");
+    // } else if ((dia >= 21 && mes==5) || (dia<=20 && mes==6)) {
+    //     alert("Sos de Geminis");
+    // } else if ((dia >= 21 && mes==6) || (dia<=22 && mes==7)) {
+    //     alert("Sos de Cáncer");
+    // } else if ((dia >= 23 && mes==7) || (dia<=22 && mes==8)) {
+    //     alert("Sos de Leo");
+    // } else if ((dia >= 23 && mes==8) || (dia<=22 && mes==9)) {
+    //     alert("Sos de Virgo");
+    // } else if ((dia >= 23 && mes==9) || (dia<=22 && mes==10)) {
+    //     alert("Sos de Libra");
+    // } else if ((dia >= 23 && mes==10) || (dia<=21 && mes==11)) {
+    //     alert("Sos de Escorpio");
+    // } else if ((dia >= 22 && mes==11) || (dia<=21 && mes==12)) {
+    //     alert("Sos de Sagitario");
+    // } else if ((dia >= 22 && mes==12) || (dia<=19 && mes==1)) {
+    //     alert("Sos de Capricornio");
+    // } else if ((dia >= 20 && mes==1) || (dia<=18 && mes==2)) {
+    //     alert("Sos de Acuario");
+    // } else if ((dia >= 19 && mes==2) || (dia<=20 && mes==3)) { 
+    //     alert("Sos de Piscis");
+    // } 
 
 //3.Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos días.
 
