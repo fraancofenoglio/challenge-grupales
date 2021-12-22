@@ -309,6 +309,7 @@
 
 
 
+
 //2.Solicitar al usuario su día y mes de nacimiento e indicar cual es su signo zodiacal.
 
                                         // Aries: 21 de marzo al 19 de abril.
@@ -353,8 +354,163 @@
     // } else if ((dia >= 19 && mes==2) || (dia<=20 && mes==3)) { 
     //     alert("Sos de Piscis");
     // } 
+    //
 
-//3.Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos días.
+//3.Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos día
+// let nombre = prompt("Ingrese su nombre");
+// let hora = parseInt(prompt("Ingrese su hora local (0-23)"));
+
+// if (hora >= 12 && hora < 19)  {
+//     alert("Buenas tardes tosica");
+// } else if ((hora >=19 && hora <= 24) || (hora >= 0  && hora < 5)) {
+//     alert("Buenas noches reyna");
+// } else if (hora >=5 && hora < 12) {
+//     alert("Buenos días lincesa");
+// }
+
+
+
+// --------------------------------------------------Ejercicios de bucles
+
+// 0) Agregar en el ejercicio de home banking la posibilidad de seguir operando hasta que el usuario decida salir.
+
+
+        // alert("Su clave es 10000-1");
+        // let clave = 9999;
+        // let balance = 5000;
+        // let intento = parseFloat(prompt("Ingrese la clave: ")); 
+        // //let monto = parseFloat(prompt("Ingrese el monto a retirar"));
+        // let salir;
+        // do {
+        //     if (intento == clave) {
+        //         let monto = parseFloat(prompt("Ingrese el monto a retirar"));
+        //         if (monto < balance){
+        //             alert("Operación exitosa. Su saldo restante es: $" + (balance - monto));
+        //         }
+        //         else {
+        //             alert("Error!, Saldo insuficiente.");
+        //         }
+            
+        //     } else {
+        //         alert("Error!, clave incorrecta, vuelva a intentar");
+        //     }
+        //     salir = prompt("Desea continuar?(S/N)");
+        // } while (salir != 'n' );
+
+
+// 1.Mostrar los primeros 10 números naturales. (1,2,3,4,5,6,7,8,9,10). 
+    // for (let i = 10; i>=1; i--){
+    //     alert(i); //guat
+    // }
+   
+
+// 2.Solicitar al usuario que ingrese 5 números y mostrar la suma de ellos.
+        // let suma = 0;
+        // for (let i = 0; i<5;i++){
+        //     let num = parseFloat(prompt("Ingrese un número: "));
+        //     suma = suma + num;
+        // }
+        // alert("El resultado de la suma es: "+ suma);//vamo claudio
+
+
+// 3.Solicitar al usuario que indique cuántos números quiere ingresar y mostrar el resultado de la suma de ellos.
+
+        // let cantNum = parseFloat(prompt("Indique cuantos numeros quiere sumar"));
+        // let suma = 0;
+        
+        // for (let i = 0; i < cantNum; i++) {
+        //         let num = parseFloat(prompt("¿Que numeros desea sumar?"));
+        //         suma = suma + num;
+        // }
+        
+        // alert("El resultado de la suma es: " + suma);
+
+// 4.Solicitar al usuario que ingrese números hasta que desee y luego mostrar la suma de ellos.
+//     let suma = 0;
+//     let salir;
+//     do {
+//         let num = parseFloat(prompt("Ingrese los números que desea sumar"));
+//         suma = suma + num;
+//         salir = prompt("¿Desea agregar otro numero para sumar? (s/n)");
+//     } while(salir != 'n');
+// alert("El resultado de la suma: "+ suma);
+
+
+// 5.Solicitar al usuario que ingrese tantos números como desee y luego mostrar el promedio de ellos.
+//igual que antes
+    // let salir
+    // let suma = 0;
+    // let cantidad = 0;
+    
+    // do {
+    //     let num = parseFloat(prompt("Ingrese números para calcular su promedio"));
+    //     suma = suma + num;
+    //     cantidad++; //Es lo mismo que cantidad = cantidad + 1;
+    //     salir = prompt("¡Desea seguir sumando?(s/n)");
+    // } while(salir != 'n');
+    // let prom = suma/cantidad;
+    // alert("El promedio de los números indicados es: " + prom);
+
+
+// 6.Realizar un programa que pida al usuario un número y muestre los números del 1 al número introducido. 
+
+        // let num = parseFloat(prompt("Ingrese un número"));
+        // for (let i = 1; i<=num; i++){
+        //         console.log(i); //muestra todos los resultados, para no poner en el alert "aceptar" a cada rato
+        //     }
+
+
+// 7.Realizar un programa que pida al usuario dos números y muestre los números del primer número al segundo. (Ejemplo: 5 y 9: 6,7,8) Aceptar solo enteros. 
+
+// 8.Preguntar al usuario cuántos números quiere ingresar. Luego solicitar que los ingrese uno por uno y mostrar cuál es el mayor.
+
+// 9.Solicitar al usuario que ingrese la cantidad de números que quiera, uno por uno, y mostrar cual es el menor de todos.
+
+// 10.Solicitar al usuario que ingrese un número y mostrar, en una sola cadena de string, la cantidad de asteriscos qué indique en el número. (Ejemplo: 5, “*****”.)
+
+// 11.Realizar un programa que pida la base y el exponente y calcule la potencia. 
+
+// 12.Realizar un programa que pida un número y calcule su factorial.  (Ejemplo de factorial: 5! Factorial de 5 es 5*4*3*2*1 )
+
+// 13.Realizar un programa que pida un número y diga todos sus divisores. (Se verifica que un número es divisor del otro cuando el resto de dividir por ese número es 0.)
+
+// 14.Solicitar al usuario que ingrese un número y una cadena de caracteres. Mostrar por consola la cantidad de caracteres se hayan solicitado. (Ejemplo: “Hola Nucba” , 4), debe mostrar:
+// H
+// O
+// L
+// A
+//Juan Carlos
+
+// 15.Solicitar al usuario que ingrese una lista de supermercado y al final mostrar todos los items separados por comas. 
+
+// 16.Solicitar al usuario que ingrese números. Finalizar cuando ingrese un número múltiplo de 3. Mostrar todos los números ingresados.
+
+// ----------------------------------------------------Bonus desafíos matemáticos !!
+
+// 1.Agregar al ejercicio 5 una validación de que solo se acepte números del 1 al 10. Si ingresa un número no válido, volver a solicitar el dato. 
+
+// 2.Realizar un programa que pida números consecutivos (3, 4 y 5; 9, 10 y 11, etc.). Cuando se introducen tres números consecutivos dice “gracias” y termina. Mientras no se introduzcan tres números consecutivos el programa sigue pidiendo números indefinidamente. 
+
+// 3.Realizar un programa que pida dos números y diga su máximo común divisor. 
+// (notas sobre el Máximo Común Divisor: 
+// - Es el máximo número por el cuál se puede dividir un número dejando resto 0.
+// - No puede ser mayor al valor de la mitad del menor número o sí mismo.
+//  (Ejemplo: Si mis números son 9 y 12, no puede estar entre 5 y 8, ni ser mayor a 9).
+//  (Ejemplo: Si mis números son 10 y 15, no puede estar entre 6 y 9, ni ser mayor a 10). (Podemos probar: 1,2,3,4,10).
+
+// 4.Solicitar al usuario que ingrese números. Mostrar los primeros tres multiplicados por 1, luego los próximos tres multiplicados por 2 y así sucesivamente. Cortar cuando el usuario ingrese un número mayor a 100. En cada iteración se debe mostrar la salida. Ejemplo:
+// Ingresa 1 > muestra 1 
+// Ingresa 8 > muestra 8
+// Ingresa 3 > Muestra 3
+// ingresa 4 > Muestra 8
+// Ingresa 9 > Muestra 18
+// Ingresa 50 > Muestra 100
+// Ingresa 7 > Muestra 21
+// ingresa 10 > Muestra 30
+
+// 5.Solicitar al usuario que ingrese 10 números, calcular el factorial de cada uno de ellos  y mostrarlo.
+
+// 6.Solicitar al usuario que ingrese un número y mostrar esa cantidad de dígitos de la secuencia de Fibonacci. 
 
 
 
