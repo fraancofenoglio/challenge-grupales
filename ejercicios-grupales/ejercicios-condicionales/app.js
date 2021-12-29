@@ -462,16 +462,78 @@
 
 // 7.Realizar un programa que pida al usuario dos números y muestre los números del primer número al segundo. (Ejemplo: 5 y 9: 6,7,8) Aceptar solo enteros. 
 
+// let num1 = parseInt(prompt("Ingrese un número: "));
+// let num2 = parseInt(prompt("Ingrese otro número: "));
+// let cadena = "";
+
+// for (let i=num1+1; i < num2; i++){
+//     cadena += ', '+ i;
+
+// }
+// cadena2 = 'hola';
+// alert(cadena2.slice(0,3)); // slice(1,3) esta tomando un intervalo 
+// let nuevaCadena = cadena.slice(1); //Inicia la cadena en 1
+// alert('Valores entre '+num1+' y '+num2+' : '+nuevaCadena);
+
+
 // 8.Preguntar al usuario cuántos números quiere ingresar. Luego solicitar que los ingrese uno por uno y mostrar cuál es el mayor.
+
+// let cantNum = parseFloat(prompt("Indique cuantos numeros quiere sumar"));
+
+// let cantidad = 0;
+
+// do {
+//     let num = parseFloat(prompt("¿Que numeros desea sumar?"));
+//     cantidad = cantidad +1;
+//     let aux = 0;
+//     let aux1;
+//     if (aux<num) {
+//         aux1 = num;
+//     } else {
+        
+//     }
+// } while (cantidad != cantNum);
+//-----------------------------------------quedó colgado acá
+        
 
 // 9.Solicitar al usuario que ingrese la cantidad de números que quiera, uno por uno, y mostrar cual es el menor de todos.
 
 // 10.Solicitar al usuario que ingrese un número y mostrar, en una sola cadena de string, la cantidad de asteriscos qué indique en el número. (Ejemplo: 5, “*****”.)
 
+// let num = parseInt(prompt("Ingrese un numero aleatorio"));
+// cadena = '';
+// for (let i = 0; i< num; i++){
+//     cadena = cadena+ '*';
+// }
+// alert(cadena);
+
+
+
 // 11.Realizar un programa que pida la base y el exponente y calcule la potencia. 
 
-// 12.Realizar un programa que pida un número y calcule su factorial.  (Ejemplo de factorial: 5! Factorial de 5 es 5*4*3*2*1 )
-
+// let base = parseFloat(prompt("Ingrese la base: "));
+// let exponente = parseFloat(prompt("Ingrese el exponente: "));
+// let aux=1;
+// for (let i = 0; i < exponente; i++){
+    
+//     aux = aux * base; //va dando una vuelta y multiplicando, ej: 2↑3=aux=1*base(2)→ aux pasa a valer 2, luego en la otra vuelta (cant de vueltas= exponente) aux(2)*base, entonces aux=4, y asi de vuelta entonces aux=8. 
+//     // 2 = 1(aux)*2(base);
+//     // 4 = 2(aux) * 2 (base)
+//     // 8 = 4(aux) * 2 (base)
+// }
+// alert(aux);
+// 12.Realizar un programa que pida un número y calcule su factorial.  (Ejemplo de factorial: 5! Factorial de 5 es 5*4*3*2*1=120 )
+// let num = parseFloat(prompt("Ingrese un número para calcular su Factorial."));
+// let aux = 1;
+// for (let i = 1; i<= num; i++){
+//     aux = aux * i;
+//     //  1 = 1 (aux) * 1 (i)
+//     //   2  = 1 (aux) * 2 (i)
+//     //   6   = 2(aux) * 3 (i)
+//     //   24   = 6(aux) * 4(i)
+//     //   120 = 24(aux) * 5 (i)
+// }
+// alert("Factorial de "+ num+ "! : "+ aux);
 // 13.Realizar un programa que pida un número y diga todos sus divisores. (Se verifica que un número es divisor del otro cuando el resto de dividir por ese número es 0.)
 
 // 14.Solicitar al usuario que ingrese un número y una cadena de caracteres. Mostrar por consola la cantidad de caracteres se hayan solicitado. (Ejemplo: “Hola Nucba” , 4), debe mostrar:
